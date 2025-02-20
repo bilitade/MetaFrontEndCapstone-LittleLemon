@@ -220,3 +220,39 @@ p {
 .testimonialList .testimonialCard {
   max-width: 300px;
 }
+
+form {
+  display: grid;
+ width: 60%;
+  gap: 15px;
+  margin: 0 auto;
+
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-size: 16px;
+  color: #333;
+}
+
+form input,
+form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+  background-color: #e4bd13;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #333333;
+}
