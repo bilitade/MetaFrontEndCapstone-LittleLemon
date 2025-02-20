@@ -3,11 +3,11 @@ import Specials from "../Components/Specials";
 import CustomerSay from "../Components/CustomersSay";
 const HomePage = () => {
     return (
-        <>
+        <main>
             <CallToAction />
             <Specials/>
             <CustomerSay/>
-        </>
+        </main>
     );
 };
 

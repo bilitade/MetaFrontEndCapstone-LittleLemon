@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Chicago = () => {
+    const navigate=useNavigate()
     return (
         <section className="chicago">
             <h1>Little Lemon</h1>
@@ -11,7 +14,7 @@ const Chicago = () => {
                     praesentium sequi.
                 </p>
             </article>
-            <button className="primarybutton" onClick={() => alert("Table Reserved!")}>Reserve Table</button>
+            <button className="primarybutton" onClick={() => navigate("/Booking")}>Reserve Table</button>
         </section>
     );
 };
