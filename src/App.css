@@ -1,42 +1,222 @@
-#root {
-  max-width: 1280px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Markazi Text', serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem 20px;
+}
+
+nav .logo {
+  height: 40px;
+  margin-right: 40px;
+}
+
+nav > ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul > li {
+  font-size: 18pt;
+  padding: 0 15px;
+}
+
+ul > li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+
+.callToActionSection {
+  display: flex;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #495E57;
+  padding: 20px;
+  
+}
+
+
+.chicago {
+  width: 400px;
+  align-self: flex-start;
+}
+
+.chicago h1 {
+  color: #c3a510;
+  font-size: 48pt;
+}
+
+.chicago p, 
+.chicago a {
+  color: white;
+  font-size: 18pt;
+}
+
+/* Image Styling */
+.callToActionImage {
+  width: 300px;
+  align-self: flex-end;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+
+.primarybutton {
+  font-size: 18pt;
+  border: 2px solid #F4CE14;
+  background-color: #F4CE14;
+  border-radius: 5px;
+  color: #333333;
+  padding: 8px 16px;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+
+.specialSection {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.specialHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.specialHeader h1 {
+  font-size: 32pt;
+  color: #333;
+}
+
+.menuButton {
+  font-size: 16pt;
+  padding: 10px 20px;
+  border: none;
+  background-color: #F4CE14;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.menuButton:hover {
+  background-color: #e4bd13;
+  transform: scale(1.05);
+}
+
+
+.menuCard {
+  background-color: #edefee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+.menuImage {
+  margin-top:0;
+  padding-top: 0;
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.menuTitle {
+  font-size: 20pt;
+  color: #333;
+  margin: 10px 0;
+}
+
+.menuPrice {
+  font-size: 18pt;
+  color: #e38524;
+}
+
+p {
+  font-size: 14pt;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.orderButton {
+  font-size: 16pt;
+  padding: 10px 20px;
+  border: none;
+  background-color:#ffffff;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.orderButton:hover {
+  background-color: #e4bd13;
+  transform: scale(1.05);
+}
+
+.specialList {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .specialList {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .specialList {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+  }
+}
+
+
+.customerSaySection {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.customerSaySection h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonialList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.testimonialList .testimonialCard {
+  max-width: 300px;
 }
